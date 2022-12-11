@@ -1,0 +1,52 @@
+.meteorform {
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+.autocomplete {
+  margin-bottom: 3rem;
+}
+
+.input {
+  margin-bottom: 3rem;
+}
+
+.popupBtn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.popupBtn {
+  font-family: 'Poppins';
+  background-color: #000;
+  color: #fff;
+}
+
+.popupBtn:hover {
+  background-color: rgb(119, 119, 119);
+  color: #000;
+}
+
+.popupContent {
+  flex: 1;
+}
+
+.popupTitle {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 3rem;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+.autocomplete {
+  position: relative;
+  width: 20rem;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.autocomplete > input {
+  font-size: inherit;
+  border: none;
+  outline: none;
+  padding: 1rem 0.65rem;
+  width: 100%;
+  border-bottom: 1px solid rgb(119, 119, 119);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #fff;
+}
+
+.list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: #fff;
+  transform: scaleY(0);
+  transition-delay: 0.3s;
+  z-index: 10;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.item {
+  padding: 1rem 0.65rem;
+  list-style: none;
+}
+
+.item:hover {
+  background: rgb(211, 211, 211);
+}
+
+.autocomplete > input:focus + .list {
+  transform: scaleY(1);
+}
+
+/* .autocomplete:not(:has(input:focus)) {
+  border-bottom: 2px;
+} */
